@@ -1,7 +1,7 @@
 <div align = center>
-
+  
   # <ins> Pokédex Website
-
+  
 </div>
 
 <div align = center>
@@ -11,6 +11,11 @@
 Ce site a été réalisé dans un cadre personnel. L'objectif de ce projet était de créer un site en utilisant React et Tailwind CSS afin d'apprendre ces technologies.
 
 <div align = center>
+  [EN]
+</div>
+This site was realized in a personal context. The objective of this project was to create a website using React and Tailwind CSS in order to learn these technologies.
+  
+
 
 <div align = center>
 
