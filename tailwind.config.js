@@ -5,7 +5,11 @@ module.exports = {
   ],
   theme: {
     container: {
-      
+      center: true,
+      padding: '2rem',
+      maxWidth:{
+        default: '800px'
+      }
     },
   },
   plugins: [],
