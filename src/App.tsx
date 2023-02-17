@@ -6,9 +6,14 @@ import { Homepage } from './screen/homepage';
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Homepage/>}></Route>
-    </Routes>
+    <div className='container'>
+      <nav className='mt-5 flex justify-end'>
+        <NavLink className='ml-3 hover:underline' to='/' style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'normal'}) }>Accueil</NavLink>
+      </nav>
+      <Routes>
+        <Route path='/' element={<Homepage/>}></Route>
+      </Routes>
+    </div>
   );
 }
 
