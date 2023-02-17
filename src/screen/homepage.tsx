@@ -8,7 +8,7 @@ export const Homepage = () => {
                     <input className="border rounded-2xl text-center" type="text" placeholder="Pokémon Name ?" name="search" id="search"/>
                 </div>
                <div className="ml-5 mt-7">
-                    <input type='submit' className="block px-2 py-1 rounded-xl bg-gray-700 hover:text-green-300"/>
+                    <input type='submit' className="block font-semibold px-2 py-1 rounded-xl bg-gray-700 hover:text-green-300"/>
                </div>
             </form>
         </div>
