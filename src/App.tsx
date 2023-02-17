@@ -8,10 +8,10 @@ function App() {
   return (
     <div className='container'>
       <nav className='mt-5 flex justify-end'>
-        <NavLink className='ml-3 hover:underline' to='/' style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'normal'}) }>Accueil</NavLink>
+        <NavLink className='ml-3 hover:underline' to='/Pokedex' style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'normal'}) }>Accueil</NavLink>
       </nav>
       <Routes>
-        <Route path='/' element={<Homepage/>}></Route>
+        <Route path='/Pokedex' element={<Homepage/>}></Route>
       </Routes>
     </div>
   );
