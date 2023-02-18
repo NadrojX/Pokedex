@@ -21,8 +21,10 @@ export const PokemonPage = () => {
 
     return (
         <div className="flex justify-center mt-20">
-            <img id={pokemonType} className="object-cover h-40 w-70 rounded-2xl" src={pokemonSprite} alt=""/>
-            <p className="text-center ml-2">{pokemonName}</p>
+            <span className="inline-block align-middle">
+                <img id={pokemonType} className="object-cover h-40 w-70 rounded-2xl" src={pokemonSprite} alt=""/>
+                <p className="text-center">{pokemonName}</p>
+            </span>
         </div>
     );
 }
