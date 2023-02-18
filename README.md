@@ -1,7 +1,8 @@
 <div align = center>
   
   # <ins> Pokédex Website
-  
+  ![Capture d’écran 2023-02-18 173950](https://user-images.githubusercontent.com/66216638/219877493-ded7fbe2-6077-4749-92cc-a3ab20dea7c0.jpg)
+  https://nadrojx.github.io/Pokedex/
 </div>
 
 <div align = center>
