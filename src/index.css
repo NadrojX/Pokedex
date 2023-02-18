@@ -6,3 +6,76 @@
     background-color: rgb(30 41 59);
     color: white;
 }
+
+#grass {
+    background-color: rgb(21 128 61);
+}
+
+#bug {
+    background-color: rgb(77 124 15);
+}
+
+#fire {
+   	background-color: rgb(127 29 29);
+}
+
+#water {
+    background-color: rgb(30 64 175);
+}
+
+#electric {
+    background-color: rgb(202 138 4);
+}
+
+#flying {
+    background-color: rgb(165 180 252);
+}
+
+#steel {
+    background-color: rgb(113 113 122);
+}
+
+#poison {
+    background-color: rgb(107 33 168);
+}
+
+#fairy {
+    background-color: rgb(240 171 252);
+}
+
+#normal {
+    background-color: rgb(120 113 108);
+}
+
+#ground {
+    background-color: rgb(124 45 18);
+}
+
+#psychic {
+    background-color: rgb(219 39 119);
+}
+
+#fighting {
+    background-color: rgb(153 27 27);
+}
+
+#ghost {
+    background-color: rgb(88 28 135)
+}
+
+#rock {
+    background-color: rgb(253 186 116);
+}
+
+#dragon {
+    background-color: rgb(109 40 217);
+}
+
+#dark {
+    background-color: rgb(41 37 36);
+}
+
+#ice {
+    background-color: rgb(165 243 252);
+}
+

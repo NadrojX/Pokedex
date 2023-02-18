@@ -7,6 +7,7 @@ type PokemonProps = {
 export const PokemonCard: React.FC<PokemonProps> = ({ id }) => {
   let [pokemonSprite, setPokemonSprite] = useState('');
   let [pokemonName, setPokemonName] = useState(null);
+  let [pokemonType, setPokemonType] = useState('');
 
   useEffect(() => {
     let fetchData = async () => {
@@ -14,6 +15,7 @@ export const PokemonCard: React.FC<PokemonProps> = ({ id }) => {
         result.json().then(json => {
             setPokemonName(json.forms[0].name)
             setPokemonSprite(json.sprites.front_default)
+            setPokemonType(json.types[0].type.name)
         })
     }
     fetchData();
@@ -21,7 +23,7 @@ export const PokemonCard: React.FC<PokemonProps> = ({ id }) => {
 
   return (
     <div className="mt-10">
-        <img className="bg-slate-300 rounded-2xl" src={pokemonSprite} alt=""/>
+        <img id={pokemonType} className=" rounded-2xl" src={pokemonSprite} alt=""/>
         <p className="text-justify ml-2 hover:font-bold hover:text-green-300">{pokemonName}</p>
     </div>
   )
