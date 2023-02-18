@@ -1,4 +1,4 @@
-import { PokemonCard } from "../component/PokemonCard";
+import { PokemonHome } from "../component/PokemonHome";
 
 export const Homepage = () => {
     return (
@@ -13,14 +13,7 @@ export const Homepage = () => {
                     <input type='submit' className="block font-semibold px-2 py-1 rounded-xl bg-gray-700 hover:text-green-300"/>
                </div>
             </form>
-            <div className="flex justify-between mr-5">
-                <PokemonCard id="1"/>
-                <PokemonCard id="2"/>
-                <PokemonCard id="3"/>
-                <PokemonCard id="4"/>
-                <PokemonCard id="5"/>
-                <PokemonCard id="6"/>
-            </div>
+            <PokemonHome/>
         </div>
      );
 }

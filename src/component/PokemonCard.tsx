@@ -22,7 +22,7 @@ export const PokemonCard: React.FC<PokemonProps> = ({ id }) => {
   return (
     <div className="mt-10">
         <img className="bg-slate-300 rounded-2xl" src={pokemonSprite} alt=""/>
-        <p className="text-center hover:font-bold hover:text-green-300">{pokemonName}</p>
+        <p className="text-justify ml-2 hover:font-bold hover:text-green-300">{pokemonName}</p>
     </div>
   )
 };
