@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 type PokemonProps = {
   id: string;
@@ -14,7 +15,7 @@ export const PokemonCard: React.FC<PokemonProps> = ({ id }) => {
         let result = await fetch("https://pokeapi.co/api/v2/pokemon/" + id)
         result.json().then(json => {
             setPokemonName(json.forms[0].name)
-            setPokemonSprite(json.sprites.front_default)
+            setPokemonSprite(json.sprites.other["official-artwork"].front_default)
             setPokemonType(json.types[0].type.name)
         })
     }
@@ -23,8 +24,8 @@ export const PokemonCard: React.FC<PokemonProps> = ({ id }) => {
 
   return (
     <div className="mt-10">
-        <img id={pokemonType} className=" rounded-2xl" src={pokemonSprite} alt=""/>
-        <p className="text-justify ml-2 hover:font-bold hover:text-green-300">{pokemonName}</p>
+        <img id={pokemonType} className="flex items-center text-center rounded-2xl" src={pokemonSprite} alt=""/>
+        <NavLink to={'/' + pokemonName}  className="flex justify-center ml-2 hover:font-bold hover:text-green-300">{pokemonName}</NavLink>
     </div>
   )
 };

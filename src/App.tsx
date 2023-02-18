@@ -12,6 +12,7 @@ import { PokemonGen7 } from './component/PokemonGen7';
 import { PokemonGen8 } from './component/PokemonGen8';
 import { PokemonGen9 } from './component/PokemonGen9';
 import { PokemonGen5 } from './component/PokemonGen5';
+import { PokemonPage } from './component/PokemonPage';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path='/Gen7' element={<PokemonGen7/>}></Route>
         <Route path='/Gen8' element={<PokemonGen8/>}></Route>
         <Route path='/Gen9' element={<PokemonGen9/>}></Route>
+        <Route path='/:pokemonName' element={<PokemonPage/>}></Route>
       </Routes>
     </div>
   );
