@@ -12,7 +12,7 @@ export const PokemonHome = () => {
 }
 
 const Home = () => {
-    for (let i = 1; i < 1009; i++) {
+    for (let i = 1; i < 20; i++) {
         let s = "" + i;
         tab.push(<PokemonCard id={s}></PokemonCard>)
     }
