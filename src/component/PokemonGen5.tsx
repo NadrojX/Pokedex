@@ -3,6 +3,7 @@ import { PokemonCard } from "./PokemonCard"
 let tab : any = [];
 
 export const PokemonGen5 = () => {
+    tab = []
     Gen5()
     return(
         <div className="grid grid-cols-6 gap-6 mt-5">
