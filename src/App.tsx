@@ -12,7 +12,7 @@ import { PokemonGen7 } from './component/PokemonGen7';
 import { PokemonGen8 } from './component/PokemonGen8';
 import { PokemonGen9 } from './component/PokemonGen9';
 import { PokemonGen5 } from './component/PokemonGen5';
-import { PokemonPage } from './component/PokemonPage';
+import { PokemonPage } from './screen/PokemonPage';
 
 function App() {
   return (

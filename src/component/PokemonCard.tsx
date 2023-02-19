@@ -6,7 +6,7 @@ type PokemonProps = {
 };
 
 export const PokemonCard: React.FC<PokemonProps> = ({ id }) => {
-  let [pokemonSprite, setPokemonSprite] = useState('');
+  let [pokemonArtwork, setPokemonArtwork] = useState('');
   let [pokemonName, setPokemonName] = useState(null);
   let [pokemonType, setPokemonType] = useState('');
 
@@ -15,7 +15,7 @@ export const PokemonCard: React.FC<PokemonProps> = ({ id }) => {
         let result = await fetch("https://pokeapi.co/api/v2/pokemon/" + id)
         result.json().then(json => {
             setPokemonName(json.forms[0].name)
-            setPokemonSprite(json.sprites.other["official-artwork"].front_default)
+            setPokemonArtwork(json.sprites.other["official-artwork"].front_default)
             setPokemonType(json.types[0].type.name)
         })
     }
@@ -24,7 +24,7 @@ export const PokemonCard: React.FC<PokemonProps> = ({ id }) => {
 
   return (
     <div className="mt-10">
-        <img id={pokemonType} className="flex items-center text-center rounded-2xl" src={pokemonSprite} alt=""/>
+        <img id={pokemonType} className="flex items-center text-center rounded-2xl" src={pokemonArtwork} alt=""/>
         <NavLink to={'/' + pokemonName}  className="flex justify-center ml-2 hover:font-bold hover:text-green-300">{pokemonName}</NavLink>
     </div>
   )
