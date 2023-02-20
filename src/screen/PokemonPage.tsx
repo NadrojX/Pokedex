@@ -90,7 +90,6 @@ export const PokemonPage = () => {
                     setEnPokemonDescription("No description.")
                     setFrPokemonDescription("Pas de description.")
                 }
-                console.log(json)
             })
         }
         fetchData();
@@ -114,9 +113,10 @@ export const PokemonPage = () => {
                     <p className="text-center ml-5">{frPokemonDescription}</p>
                     <p className="text-center ml-5">------------------------------------------------------</p>
                     <p className="text-center ml-5 underline">Sprite : </p>
-                    <img className="ml-56" src={pokemonSprite} alt=""/>
-                    <p className="text-center ml-5 underline">Shiny Sprite : </p>
-                    <img className="ml-56" src={pokemonSprite2} alt=""/>
+                    <p className="text-center underline inline-flex ml-44 lg:ml-72"> 
+                        <img src={pokemonSprite} alt=""/>
+                        <img src={pokemonSprite2} alt=""/>
+                    </p>
                 </div>
             </span>
         </div>
