@@ -14,7 +14,7 @@ export const PokemonCard: React.FC<PokemonProps> = ({ id }) => {
     let fetchData = async () => {
         let result = await fetch("https://pokeapi.co/api/v2/pokemon/" + id)
         result.json().then(json => {
-            setPokemonName(json.forms[0].name)
+            setPokemonName(json.name)
             setPokemonArtwork(json.sprites.other["official-artwork"].front_default)
             setPokemonType(json.types[0].type.name)
         })
