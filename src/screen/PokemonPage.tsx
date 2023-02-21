@@ -104,30 +104,30 @@ export const PokemonPage = () => {
             [EN] : {pokemonName} | [FR] : {frPokemonName}{" "}
           </p>
           <p className="text-center ml-5">
-            ------------------------------------------------------
+            ______________________________________________________
           </p>
           <p className="text-center ml-5">
             {" "}
             Type 1 : {pokemonType} | Type 2 : {pokemonType2}
           </p>
           <p className="text-center ml-5">
-            ------------------------------------------------------
+            ______________________________________________________
           </p>
           <p className="text-center ml-5">
             Abilitie 1 : {pokemonAbilitie} | Abilitie 2 : {pokemonAbilitie2}
           </p>
           <p className="text-center ml-5">
-            ------------------------------------------------------
+            ______________________________________________________
           </p>
           <p className="text-center ml-5 underline">[EN] Description :</p>
           <p className="text-center ml-5">{enPokemonDescription}</p>
           <p className="text-center ml-5">
-            ------------------------------------------------------
+            ______________________________________________________
           </p>
           <p className="text-center ml-5 underline">[FR] Description :</p>
           <p className="text-center ml-5">{frPokemonDescription}</p>
           <p className="text-center ml-5">
-            ------------------------------------------------------
+            ______________________________________________________
           </p>
           <p className="text-center ml-5 underline">Sprite : </p>
           <p className="text-center underline inline-flex ml-44 lg:ml-72">
